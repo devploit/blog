@@ -23,7 +23,7 @@ timezone:
 
 title: devploit                          # the main title
 
-tagline: Infosec Enthusiast   # it will display as the sub-title
+tagline: Infosec Enthusiast | CTF Player  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Infosec Enthusiast & CTF player.
