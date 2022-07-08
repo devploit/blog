@@ -10,6 +10,6 @@ I'm currently working at [Freepik Company](https://www.freepikcompany.com/) as S
 
 In addition to working and participating in CTFs I also (try to) maintain a repository of payloads that may be useful for other security researchers. You can visit it at: [pwny.cc](https://www.pwny.cc).
 
-This page will be mainly focused on Information Security posts, such as CTF write-ups, research papers and similar pieces.
+**This page will be mainly focused on Information Security posts, such as CTF write-ups, research papers and similar pieces.**
 
 If you have any doubt/question, feel free to contact me via [twitter](https://twitter.com/devploit).
