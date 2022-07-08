@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://blog.0xdev.eu//categories/</loc>
+<lastmod>2022-07-08T10:33:01+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.0xdev.eu//tags/</loc>
+<lastmod>2022-07-08T10:33:01+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.0xdev.eu//archives/</loc>
+<lastmod>2022-07-08T10:33:01+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.0xdev.eu//about/</loc>
+<lastmod>2022-07-08T10:33:01+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.0xdev.eu//</loc>
+</url>
+</urlset>
