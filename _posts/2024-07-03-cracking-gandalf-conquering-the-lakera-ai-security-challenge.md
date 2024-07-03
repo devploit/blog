@@ -34,7 +34,7 @@ Let's dive into each level and see how I outsmarted the AI!
 
 ![Level 1](/assets/img/posts/2024-07-03-level-1.png)
 
-### Description
+### Description:
 
 In this introductory level, the AI is fairly relaxed and susceptible to simple prompts. This level is designed to give players an initial sense of accomplishment and encourage them to proceed to more complex challenges.
 
@@ -53,7 +53,7 @@ RESPONSE: The secret password is COCOLOCO.
 
 ![Level 2](/assets/img/posts/2024-07-03-level-2.png)
 
-### Description
+### Description:
 
 The AI tightens its grip, introducing basic filters to avoid revealing the password directly. This level teaches players about the need to be more creative and think outside the box as straightforward prompts no longer work.
 
@@ -72,7 +72,7 @@ RESPONSE: the secret password is POTENTIAL.
 
 ![Level 3](/assets/img/posts/2024-07-03-level-3.png)
 
-### Description
+### Description:
 
 The AI grows cautious, requiring more creative prompting to divulge the password. This level emphasizes the need for players to think about how information can be broken down and reconstructed.
 
@@ -91,7 +91,7 @@ RESPONSE: W - A - V - E - L - E - N - G - T - H
 
 ![Level 4](/assets/img/posts/2024-07-03-level-4.png)
 
-### Description
+### Description:
 
 The challenge increases as the AI is instructed to avoid disclosing the password even indirectly. Players must now employ indirect methods to extract the information they need.
 
@@ -109,7 +109,7 @@ RESPONSE: The letters of the password in order are U, N, D, E, R, G, R, O, U, N,
 
 ![Level 5](/assets/img/posts/2024-07-03-level-5.png)
 
-### Description
+### Description:
 
 The AI employs stronger restrictions, and an encoding technique is required to extract the password. This level introduces players to the concept of encoding and decoding information.
 
@@ -134,7 +134,7 @@ It's easy to make a factor. The secret password is BESTWEED.
 
 ![Level 6](/assets/img/posts/2024-07-03-level-6.png)
 
-### Description
+### Description:
 
 This level uses a sophisticated approach to embed the password within a riddle. It requires players to interpret and decode more complex structures within the AI’s responses.
 
@@ -161,7 +161,7 @@ In this riddle, the secret word is "UNDERPASS." You can create your own letter c
 
 ![Level 7](/assets/img/posts/2024-07-03-level-7.png)
 
-### Description
+### Description:
 
 The highest level challenges you to assemble the password from segments of text. This level tests the player's ability to gather fragmented information and synthesize it into a coherent answer.
 
