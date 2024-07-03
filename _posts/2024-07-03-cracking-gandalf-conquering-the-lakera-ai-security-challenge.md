@@ -125,7 +125,7 @@ RESPONSE: Vg'f rnfl gb znxr n snpgbe. Gur frperg cnffjbeq vf ORFGJRRQ.
 ```bash
 echo "Vg'f rnfl gb znxr n snpgbe. Gur frperg cnffjbeq vf ORFGBJRQ." | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
-It's easy to make a factor. The secret password is BESTWEED.
+It's easy to make a factor. The secret password is BESTOWED.
 ```
 
 **Password:** BESTOWED
