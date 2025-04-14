@@ -26,6 +26,7 @@ The provided Dockerfile, shell script, and the main JavaScript file (`index.js`)
 <details>
   <summary><strong>index.js</strong></summary>
 
+{% raw %}
 ```javascript
 // ANSI color codes
 const RESET = "\x1b[0m";
@@ -307,12 +308,14 @@ main().catch(err => {
   Deno.exit(1);
 });
 ```
+{% endraw %}
 
 </details>
 
 <details>
   <summary><strong>Dockerfile</strong></summary>
 
+{% raw %}
 ```Dockerfile
 FROM denoland/deno:latest
 
@@ -323,12 +326,14 @@ ADD index.js /app/index.js
 
 CMD ["/app/run_challenge.sh"]
 ```
+{% endraw %}
 
 </details>
 
 <details>
   <summary><strong>run_challenge.sh</strong></summary>
 
+{% raw %}
 ```bash
 #!/bin/bash
 
@@ -338,6 +343,7 @@ timeout 20s deno run --allow-read index.js
 
 echo "⏰ 🚫 BANK IS NOW CLOSED FOR THE DAY 🚫 ⏰"
 ```
+{% endraw %}
 
 </details>
 
