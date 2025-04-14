@@ -25,9 +25,7 @@ The provided Dockerfile, shell script, and the main JavaScript file (`index.js`)
 
 <details>
   <summary><strong>index.js</strong></summary>
-
-{% raw %}
-```javascript
+  <pre><code class="language-javascript">
 // ANSI color codes
 const RESET = "\x1b[0m";
 const GREEN = "\x1b[32m";
@@ -307,16 +305,12 @@ main().catch(err => {
   console.error(`${MAGENTA}An error occurred:${RESET}`, err);
   Deno.exit(1);
 });
-```
-{% endraw %}
-
+  </code></pre>
 </details>
 
 <details>
   <summary><strong>Dockerfile</strong></summary>
-
-{% raw %}
-```Dockerfile
+  <pre><code class="language-dockerfile">
 FROM denoland/deno:latest
 
 WORKDIR /app
@@ -325,16 +319,12 @@ ADD run_challenge.sh /app/run_challenge.sh
 ADD index.js /app/index.js
 
 CMD ["/app/run_challenge.sh"]
-```
-{% endraw %}
-
+  </code></pre>
 </details>
 
 <details>
   <summary><strong>run_challenge.sh</strong></summary>
-
-{% raw %}
-```bash
+  <pre><code class="language-bash">
 #!/bin/bash
 
 ulimit -m 22400 
@@ -342,9 +332,7 @@ ulimit -m 22400
 timeout 20s deno run --allow-read index.js
 
 echo "⏰ 🚫 BANK IS NOW CLOSED FOR THE DAY 🚫 ⏰"
-```
-{% endraw %}
-
+  </code></pre>
 </details>
 
 ## Challenge Goal and Constraints
