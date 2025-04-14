@@ -339,7 +339,6 @@ timeout 20s deno run --allow-read index.js
 echo "⏰ 🚫 BANK IS NOW CLOSED FOR THE DAY 🚫 ⏰"
 ```
 
-  </code></pre>
 </details>
 
 ## Challenge Goal and Constraints
