@@ -23,13 +23,13 @@ timezone:
 
 title: devploit                          # the main title
 
-tagline: Infosec Enthusiast | CTF Player  # it will display as the sub-title
+tagline: Head of Security
 
 description: >-                        # used by seo meta and the atom feed
-  Infosec Enthusiast & CTF player.
+  Real-world infosec, no hype.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://blog.0xdev.eu/'
+url: 'https://blog.devploit.dev'
 
 github:
   username: devploit             # change to your github username
@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:   https://raw.githubusercontent.com/devploit/blog/main/assets/img/avatar.png
+avatar: https://avatars.githubusercontent.com/devploit
 
 # boolean type, the global switch for ToC in posts.
 toc: true

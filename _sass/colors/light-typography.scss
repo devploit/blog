@@ -1,0 +1,99 @@
+/*
+ * Light mode colors — matched to devploit.github.io brand palette
+ *
+ * Brand tokens:
+ *   bg: #fff | surface: #f5f5f5 | border: #ddd / #ccc
+ *   text: #111 | muted: #555 | subtle: #777
+ *   accent: #c06a20
+ */
+
+@mixin light-scheme {
+  /* Framework color */
+  --body-bg: #fafafa;
+  --mask-bg: #ccc;
+  --main-wrapper-bg: #fff;
+  --main-border-color: #ddd;
+
+  /* Common color */
+  --text-color: #111;
+  --text-muted-color: #555;
+  --heading-color: #111;
+  --blockquote-border-color: #ddd;
+  --blockquote-text-color: #777;
+  --link-color: #c06a20;
+  --link-underline-color: #e8cdb0;
+  --button-bg: #fff;
+  --btn-border-color: #ddd;
+  --btn-backtotop-color: #555;
+  --btn-backtotop-border-color: #ddd;
+  --btn-box-shadow: #eaeaea;
+  --checkbox-color: #ccc;
+  --checkbox-checked-color: #c06a20;
+
+  /* Sidebar */
+  --sidebar-bg: #f5f5f5;
+  --sidebar-muted-color: #777;
+  --sidebar-active-color: #111;
+  --nav-cursor-color: #c06a20;
+  --sidebar-btn-bg: #fff;
+
+  /* Topbar */
+  --topbar-text-color: #111;
+  --topbar-wrapper-bg: #fff;
+  --search-wrapper-bg: rgb(245 245 245 / 50%);
+  --search-wrapper-border-color: #ddd;
+  --search-tag-bg: #f5f5f5;
+  --search-icon-color: #ccc;
+  --input-focus-border-color: #c06a20;
+
+  /* Home page */
+  --post-list-text-color: #555;
+  --btn-patinator-text-color: #555;
+  --btn-paginator-hover-color: #f5f5f5;
+  --btn-paginator-border-color: #f5f5f5;
+  --btn-text-color: #555;
+  --pin-bg: #f5f5f5;
+  --pin-color: #777;
+
+  /* Posts */
+  --btn-share-hover-color: #c06a20;
+  --card-border-color: #ddd;
+  --card-box-shadow: rgba(220, 220, 220, 0.77);
+  --label-color: #555;
+  --relate-post-date: rgba(30, 55, 70, 0.4);
+  --footnote-target-bg: #fff3e0;
+  --tag-bg: rgba(0, 0, 0, 0.075);
+  --tag-border: #ddd;
+  --tag-shadow: var(--btn-border-color);
+  --tag-hover: #ddd;
+  --tb-odd-bg: #fbfcfd;
+  --tb-border-color: #ddd;
+  --dash-color: #ccc;
+  --preview-img-bg: radial-gradient(circle, #fff 0%, #f5f5f5 100%);
+  --kbd-wrap-color: #ccc;
+  --kbd-text-color: var(--text-color);
+  --kbd-bg-color: #fff;
+  --prompt-text-color: rgb(17 17 17 / 77%);
+  --prompt-tip-bg: rgb(123 247 144 / 20%);
+  --prompt-tip-icon-color: #03b303;
+  --prompt-info-bg: #e1f5fe;
+  --prompt-info-icon-color: #0070cb;
+  --prompt-warning-bg: rgb(255 243 205);
+  --prompt-warning-icon-color: #ef9c03;
+  --prompt-danger-bg: rgb(248 215 218 / 56%);
+  --prompt-danger-icon-color: #df3c30;
+
+  [class^=prompt-] {
+    --link-underline-color: rgb(219 216 216);
+  }
+
+  /* Categories */
+  --categories-hover-bg: #ddd;
+  --categories-icon-hover-color: #111;
+
+  /* Archive */
+  --timeline-color: #ddd;
+  --timeline-node-bg: #ccc;
+  --timeline-year-dot-color: #fff;
+
+} /* light-scheme */
