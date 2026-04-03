@@ -1,0 +1,153 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+{% assign pinned = site.posts | where: "pin", "true" %}
+{% assign default = site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %}
+{% assign latest_post = site.posts.first %}
+{% assign featured_post = pinned.first | default: latest_post %}
+{% assign post_count = site.posts | size %}
+{% assign tag_count = site.tags | size %}
+{% assign category_count = site.categories | size %}
+
+{% assign posts = "" | split: "" %}
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size | minus: offset %}
+
+{% if pinned_num > 0 %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
+{% assign default_beg = offset | minus: pinned.size %}
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
+
+{% assign default_num = paginator.posts | size | minus: pinned_num %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
+<div class="row">
+  <div id="core-wrapper" class="col-12 col-lg-11 col-xl-10 pr-xl-4">
+    <div class="home-shell">
+      <section class="home-hero">
+        <div class="hero-grid"></div>
+        <div class="hero-copy reveal">
+          <p class="hero-kicker">Security research notebook</p>
+          <h1>Writeups, exploit chains, AI security, and CTF work without the hype.</h1>
+          <p class="hero-lede">
+            This blog extends the tone of the main site: practical offensive security, concrete lessons,
+            and postmortems that prioritize signal over polish.
+          </p>
+          <div class="hero-actions">
+            {% if featured_post %}
+              <a class="hero-action hero-action-primary" href="{{ featured_post.url | relative_url }}">Read featured writeup</a>
+            {% endif %}
+            <a class="hero-action" href="{{ '/archives/' | relative_url }}">Browse archive</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-panel-head">
+            <span class="hero-panel-label">Live feed</span>
+            {% if latest_post %}
+              <span class="hero-panel-meta">{% include datetime.html date=latest_post.date lang=lang %}</span>
+            {% endif %}
+          </div>
+
+          {% if latest_post %}
+            <a class="hero-featured" href="{{ latest_post.url | relative_url }}">
+              <p class="hero-featured-tag">
+                {% if latest_post.categories.size > 0 %}
+                  {{ latest_post.categories | first }}
+                {% else %}
+                  Latest post
+                {% endif %}
+              </p>
+              <h2>{{ latest_post.title }}</h2>
+              <p>
+                {% include no-linenos.html content=latest_post.content %}
+                {{ content | markdownify | strip_html | truncate: 150 | escape }}
+              </p>
+            </a>
+          {% endif %}
+
+          <div class="hero-stats">
+            <div>
+              <span class="hero-stat-value">{{ post_count }}</span>
+              <span class="hero-stat-label">Posts</span>
+            </div>
+            <div>
+              <span class="hero-stat-value">{{ category_count }}</span>
+              <span class="hero-stat-label">Tracks</span>
+            </div>
+            <div>
+              <span class="hero-stat-value">{{ tag_count }}</span>
+              <span class="hero-stat-label">Tags</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="hero-divider">
+        <div class="hero-divider-line hero-divider-line--accent"></div>
+        <div class="hero-divider-line"></div>
+      </div>
+
+      <section class="home-stream">
+        <div class="section-heading reveal">
+          <p>Recent research</p>
+          <h2>Operational notes from the field.</h2>
+        </div>
+
+        <div id="post-list" class="post-stream">
+        {% for post in posts %}
+          <article class="post-preview reveal">
+            <div class="post-shell">
+              <div class="post-meta-line">
+                <span class="post-meta-date">{% include datetime.html date=post.date lang=lang %}</span>
+                {% if post.categories.size > 0 %}
+                  <span class="post-meta-divider"></span>
+                  <span class="post-meta-category">{{ post.categories | first }}</span>
+                {% endif %}
+                {% if post.pin %}
+                  <span class="post-pin">Pinned</span>
+                {% endif %}
+              </div>
+
+              <h2>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h2>
+
+              <div class="post-content">
+                <p>
+                  {% include no-linenos.html content=post.content %}
+                  {{ content | markdownify | strip_html | truncate: 210 | escape }}
+                </p>
+              </div>
+
+              <a class="post-readmore" href="{{ post.url | relative_url }}">Open writeup</a>
+            </div>
+          </article>
+        {% endfor %}
+        </div>
+      </section>
+
+      {% if paginator.total_pages > 0 %}
+        {% include post-paginator.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>
