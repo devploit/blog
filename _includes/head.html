@@ -82,7 +82,8 @@
 
   <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap.css | relative_url}}">
   <link rel="stylesheet" href="{{ site.data.assets[origin].fontawesome.css | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% assign style_version = site.time | date: '%s' %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: style_version | relative_url }}">
 
   {% if site.toc and page.toc %}
     <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap-toc.css | relative_url }}">
