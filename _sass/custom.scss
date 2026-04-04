@@ -148,8 +148,10 @@ a {
 #topbar-title,
 #breadcrumb {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
-  letter-spacing: 0.06em;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
 }
 
 #topbar-title {
@@ -161,20 +163,39 @@ a {
   color: #8a867d;
 }
 
+#breadcrumb a {
+  display: inline-block;
+  padding-bottom: 0.15rem;
+}
+
 #sidebar-trigger,
 #search-trigger {
   color: #8a867d;
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+#sidebar-trigger:hover,
+#search-trigger:hover,
+#breadcrumb a:hover {
+  color: #f0ede6;
 }
 
 #search-wrapper {
   border-color: #2a2a30;
-  background: rgba(12, 12, 14, 0.8);
+  background: rgba(12, 12, 14, 0.72);
   border-radius: 0.3rem;
 }
 
 #search-input {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+#search-input::placeholder {
+  color: #666660;
+  opacity: 1;
 }
 
 #core-wrapper .home-shell {
