@@ -46,29 +46,42 @@ layout: default
         <div class="hero-grid"></div>
         <div class="hero-copy reveal">
           <p class="hero-kicker">Security research notebook</p>
-          <h1>Writeups, exploit chains, AI security, and CTF work without the hype.</h1>
+          <h1>
+            <span class="hero-title-line">Writeups, exploit</span>
+            <span class="hero-title-line">chains, AI security,</span>
+            <span class="hero-title-line">and CTF notes.</span>
+          </h1>
+          <p class="hero-handle">@devploit / blog</p>
           <p class="hero-lede">
-            This blog extends the tone of the main site: practical offensive security, concrete lessons,
-            and postmortems that prioritize signal over polish.
+            Real-world infosec, no hype. Practical offensive security research, concrete lessons, and postmortems
+            that prioritize signal over polish.
           </p>
           <div class="hero-actions">
             {% if featured_post %}
               <a class="hero-action hero-action-primary" href="{{ featured_post.url | relative_url }}">Read featured writeup</a>
             {% endif %}
-            <a class="hero-action" href="{{ '/archives/' | relative_url }}">Browse archive</a>
+            <a class="hero-action hero-action-secondary" href="{{ '/archives/' | relative_url }}">Browse archive</a>
           </div>
         </div>
+      </section>
 
-        <div class="hero-panel reveal">
-          <div class="hero-panel-head">
-            <span class="hero-panel-label">Live feed</span>
-            {% if latest_post %}
-              <span class="hero-panel-meta">{% include datetime.html date=latest_post.date lang=lang %}</span>
-            {% endif %}
+      <div class="hero-divider">
+        <div class="hero-divider-line hero-divider-line--accent"></div>
+        <div class="hero-divider-line"></div>
+      </div>
+
+      <section class="home-overview">
+        <div class="overview-col reveal">
+          <div class="section-heading section-heading-compact">
+            <p>// latest post</p>
           </div>
 
           {% if latest_post %}
             <a class="hero-featured" href="{{ latest_post.url | relative_url }}">
+              <div class="hero-panel-head">
+                <span class="hero-panel-label">Live feed</span>
+                <span class="hero-panel-meta">{% include datetime.html date=latest_post.date lang=lang %}</span>
+              </div>
               <p class="hero-featured-tag">
                 {% if latest_post.categories.size > 0 %}
                   {{ latest_post.categories | first }}
@@ -83,32 +96,34 @@ layout: default
               </p>
             </a>
           {% endif %}
+        </div>
 
-          <div class="hero-stats">
-            <div>
-              <span class="hero-stat-value">{{ post_count }}</span>
-              <span class="hero-stat-label">Posts</span>
+        <div class="overview-col reveal">
+          <div class="section-heading section-heading-compact">
+            <p>// notebook status</p>
+          </div>
+
+          <div class="notebook-status">
+            <div class="status-line">
+              <span class="status-value">{{ post_count }}</span>
+              <span class="status-label">Published writeups</span>
             </div>
-            <div>
-              <span class="hero-stat-value">{{ category_count }}</span>
-              <span class="hero-stat-label">Tracks</span>
+            <div class="status-line">
+              <span class="status-value">{{ category_count }}</span>
+              <span class="status-label">Research tracks</span>
             </div>
-            <div>
-              <span class="hero-stat-value">{{ tag_count }}</span>
-              <span class="hero-stat-label">Tags</span>
+            <div class="status-line">
+              <span class="status-value">{{ tag_count }}</span>
+              <span class="status-label">Indexed tags</span>
             </div>
+            <p class="status-note">Focused notes from offensive security work, competitions, and AI security research.</p>
           </div>
         </div>
       </section>
 
-      <div class="hero-divider">
-        <div class="hero-divider-line hero-divider-line--accent"></div>
-        <div class="hero-divider-line"></div>
-      </div>
-
       <section class="home-stream">
         <div class="section-heading reveal">
-          <p>Recent research</p>
+          <p>// recent research</p>
           <h2>Operational notes from the field.</h2>
         </div>
 
