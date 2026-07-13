@@ -1,5 +1,83 @@
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/syne/syne-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/syne/syne-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/syne/syne-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/syne/syne-800.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-700.ttf') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.post-content .table-wrapper > table.cve-summary {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.post-content .table-wrapper > table.cve-summary th,
+.post-content .table-wrapper > table.cve-summary td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.post-content .table-wrapper > table.cve-summary th:nth-child(1),
+.post-content .table-wrapper > table.cve-summary td:nth-child(1) {
+  width: 24%;
+}
+
+.post-content .table-wrapper > table.cve-summary th:nth-child(2),
+.post-content .table-wrapper > table.cve-summary td:nth-child(2) {
+  width: 26%;
 }
 
 body {
@@ -9,10 +87,23 @@ body {
     linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     radial-gradient(circle at top left, rgba(232, 140, 64, 0.08), transparent 28%);
   background-size: 100% 32px, 32px 100%, auto;
-  font-family: 'Syne', sans-serif;
-  font-size: 16px;
+  font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+.post .post-title,
+.post h1,
+.post h2,
+.post h3,
+.post h4 {
+  font-family: 'Syne', sans-serif;
+}
+
+.post-content {
+  font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.72;
 }
 
 a {
@@ -274,7 +365,7 @@ a {
 }
 
 #core-wrapper .home-shell .home-hero h1 {
-  max-width: 12ch;
+  max-width: 20ch;
   margin-bottom: 0.5rem;
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 800;
@@ -297,7 +388,7 @@ a {
 #core-wrapper .home-shell .hero-featured p,
 #core-wrapper .home-shell .post-preview .post-content p {
   color: #c6c1b4;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.65;
 }
@@ -641,7 +732,7 @@ a {
   }
 
   #core-wrapper .home-shell .home-hero h1 {
-    max-width: 12ch;
+    max-width: 20ch;
     font-size: clamp(30px, 4.4vw, 42px);
   }
 

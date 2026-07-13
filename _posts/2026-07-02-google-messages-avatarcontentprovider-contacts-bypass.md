@@ -2,7 +2,9 @@
 layout: post
 title: "Reading Contact Photos Without READ_CONTACTS: A Google Messages Confused Deputy Bug"
 date: 2026-07-02
-image: /assets/img/posts/2026-07-02-google-messages-vrp-reward.png
+image:
+  path: /assets/img/posts/2026-07-02-google-messages-confused-deputy-og.jpg
+  alt: "A protected contact image crossing an application permission boundary through an intermediary"
 categories:
   - Mobile Security
 tags:

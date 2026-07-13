@@ -47,14 +47,14 @@ layout: default
         <div class="hero-copy reveal">
           <p class="hero-kicker">Security research notebook</p>
           <h1>
-            <span class="hero-title-line">Writeups, exploit</span>
-            <span class="hero-title-line">chains, AI security,</span>
-            <span class="hero-title-line">and CTF notes.</span>
+            <span class="hero-title-line">Vulnerability research,</span>
+            <span class="hero-title-line">exploit chains, and</span>
+            <span class="hero-title-line">CTF field notes.</span>
           </h1>
           <p class="hero-handle">@devploit / blog</p>
           <p class="hero-lede">
-            Real-world infosec, no hype. Practical offensive security research, concrete lessons, and postmortems
-            that prioritize signal over polish.
+            Real-world infosec, no hype. Original findings, reproducible proofs of concept, and postmortems
+            built for people who want the technical details.
           </p>
           <div class="hero-actions">
             {% if featured_post %}
@@ -116,7 +116,7 @@ layout: default
               <span class="status-value">{{ tag_count }}</span>
               <span class="status-label">Indexed tags</span>
             </div>
-            <p class="status-note">Focused notes from offensive security work, competitions, and AI security research.</p>
+            <p class="status-note">Focused notes from vulnerability research, offensive security work, and competitions.</p>
           </div>
         </div>
       </section>
@@ -129,6 +129,7 @@ layout: default
 
         <div id="post-list" class="post-stream">
         {% for post in posts %}
+          {% unless post.url == latest_post.url %}
           <article class="post-preview reveal">
             <div class="post-shell">
               <div class="post-meta-line">
@@ -156,6 +157,7 @@ layout: default
               <a class="post-readmore" href="{{ post.url | relative_url }}">Open writeup</a>
             </div>
           </article>
+          {% endunless %}
         {% endfor %}
         </div>
       </section>

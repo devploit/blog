@@ -4,12 +4,18 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hi, I'm Daniel Púa (a.k.a. devploit) and I'm an infosec lover from Cádiz (Spain). I'm living on Malaga where I work and do my stuff. I also participate in CTFs as a hobby. My teams are [ripp3rs](https://ctftime.org/team/50984) & [R3Vengers](https://ctftime.org/team/175470).
+Hi, I'm Daniel Púa, also known as **devploit**. I'm a security researcher from Cádiz, based in Málaga, and currently Head of Security at [Magnific](https://www.magnific.com/).
 
-I'm currently working at [Magnific](https://www.magnific.com/) as Head of Security.
+My work focuses on vulnerability research, offensive security, product security, and turning unusual technical behavior into reproducible findings. This blog is where I publish the longer version: root causes, exploit primitives, proofs of concept, and the lessons that remain useful after a bug is fixed.
 
-In addition to working and participating in CTFs I also (try to) maintain a repository of payloads that may be useful for other security researchers. You can visit it at: [pwny.cc](https://www.pwny.cc).
+## Research and disclosures
 
-**This page will be mainly focused on Information Security posts, such as CTF write-ups, research papers and similar pieces.**
+My published CVEs and advisory references live in the [CVE index on devploit.dev](https://devploit.dev/cves.html). The main site also collects selected [security research, live hacking results, and CTF work](https://devploit.dev/).
 
-If you have any doubt/question, feel free to contact me via [twitter](https://twitter.com/devploit).
+## Tools and community
+
+I maintain [pwny.cc](https://www.pwny.cc/), a payload reference for security researchers, and open-source projects such as [nomore403](https://github.com/devploit/nomore403). I have competed in CTFs since 2017 with teams including [ripp3rs](https://ctftime.org/team/50984) and [R3Vengers](https://ctftime.org/team/175470), and I help organize Hack&Beers Málaga.
+
+## Contact
+
+For research, consulting, or responsible-disclosure questions, use the contact details on [devploit.dev](https://devploit.dev/#contact) or reach me on [LinkedIn](https://www.linkedin.com/in/daniel-pua) and [GitHub](https://github.com/devploit).

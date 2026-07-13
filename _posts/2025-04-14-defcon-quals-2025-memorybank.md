@@ -2,6 +2,9 @@
 layout: post
 title: "DEFCON Quals 2025 - Memory Bank CTF Challenge Writeup"
 date: 2025-04-14
+image:
+  path: /assets/img/posts/2025-04-14-memory-bank-og.jpg
+  alt: "Memory pressure breaking a weakly referenced account token inside a digital vault"
 categories: 
   - Exploitation
 tags: 
