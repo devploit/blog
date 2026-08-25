@@ -3,15 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/syne/syne-400.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/assets/fonts/syne/syne-500.ttf') format('truetype');
+  src: url('/assets/fonts/syne/syne-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -19,7 +11,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/syne/syne-700.ttf') format('truetype');
+  src: url('/assets/fonts/syne/syne-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -27,7 +19,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/assets/fonts/syne/syne-800.ttf') format('truetype');
+  src: url('/assets/fonts/syne/syne-800.woff2') format('woff2');
 }
 
 @font-face {
@@ -35,7 +27,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-400.ttf') format('truetype');
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -43,7 +35,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-500.ttf') format('truetype');
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -51,7 +43,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-700.ttf') format('truetype');
+  src: url('/assets/fonts/jetbrains-mono/jetbrains-mono-700.woff2') format('woff2');
 }
 
 html {
