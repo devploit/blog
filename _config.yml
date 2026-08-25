@@ -16,7 +16,7 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: Europe/Madrid
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -26,7 +26,8 @@ title: "devploit / blog"   # the main title
 tagline: Writeups, offensive security, and applied research
 
 description: >-                        # used by seo meta and the atom feed
-  Real-world infosec, no hype.
+  Security research notebook by devploit (Daniel Púa): vulnerability research,
+  CVE writeups, exploit chains, and CTF postmortems with reproducible proofs of concept.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://blog.devploit.dev'
@@ -109,7 +110,7 @@ comments:
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
-  cache_version: '20260710'
+  cache_version: '20260825'
   self_host:
     enabled: true
     # specify the Jekyll environment, empty means both
