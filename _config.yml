@@ -176,7 +176,8 @@ sass:
 compress_html:
   clippings: all
   comments: all
-  endings: all
+  # Keep </html>, </head> and </body>: Cloudflare Web Analytics auto-injection needs a closing body tag
+  endings: [li, dt, dd, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
   profile: false
   blanklines: false
   ignore:
