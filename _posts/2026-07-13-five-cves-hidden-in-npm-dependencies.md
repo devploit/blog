@@ -1,8 +1,13 @@
 ---
 layout: post
 title: "The Bug Was Four Layers Down: Five CVEs in npm Dependencies"
+description: >-
+  Research into five CVEs across three npm packages, covering filesystem and
+  memory allocation boundaries, dependency risks, and lessons from disclosure.
 date: 2026-07-13
 image:
+  width: 1200
+  height: 630
   path: /assets/img/posts/2026-07-13-npm-five-cves-og.jpg
   alt: "Nested dependency and archive layers exposing a security warning at their core"
 categories:

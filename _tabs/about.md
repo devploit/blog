@@ -1,5 +1,11 @@
 ---
 title: About
+description: >-
+  Meet Daniel Púa (devploit), a security researcher focused on vulnerability
+  research and product security. Explore his disclosures, tools, and community work.
+seo:
+  type: AboutPage
+  name: About Daniel Púa (devploit)
 icon: fas fa-info-circle
 order: 4
 ---

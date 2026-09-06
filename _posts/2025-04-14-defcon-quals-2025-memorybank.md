@@ -1,8 +1,13 @@
 ---
 layout: post
 title: "DEFCON Quals 2025 - Memory Bank CTF Challenge Writeup"
+description: >-
+  A writeup of the Memory Bank challenge from DEFCON Quals 2025,
+  examining JavaScript weak references, memory pressure, and the challenge's security lessons.
 date: 2025-04-14
 image:
+  width: 1200
+  height: 630
   path: /assets/img/posts/2025-04-14-memory-bank-og.jpg
   alt: "Memory pressure breaking a weakly referenced account token inside a digital vault"
 categories: 

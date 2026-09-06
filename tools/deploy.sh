@@ -61,6 +61,8 @@ test() {
     --check-html \
     --allow_hash_href \
     "$SITE_DIR"
+
+  bundle exec ruby tools/check-seo.rb "$SITE_DIR"
 }
 
 resume_site_dir() {

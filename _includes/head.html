@@ -40,13 +40,14 @@
     {% endfor %}
   {% endif %}
 
-  {{ seo_tags }}
+  <!-- Correct the ImageObject type emitted by jekyll-seo-tag 2.8.0. -->
+  {{ seo_tags | replace: '"@type":"imageObject"', '"@type":"ImageObject"' }}
 
   <title>
-  {%- unless page.layout == "home" -%}
-    {{ page.title | append: " | "}}
-  {%- endunless -%}
-    {{ site.title }}
+  {%- if page.title -%}
+    {{ page.title | append: ' | ' | escape }}
+  {%- endif -%}
+    {{ site.title | escape }}
   </title>
 
   {% include favicons.html %}
