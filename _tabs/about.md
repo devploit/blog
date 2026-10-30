@@ -10,7 +10,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hi, I'm Daniel Púa, also known as **devploit**. I'm a security researcher from Cádiz, based in Málaga, and currently Head of Security at [Magnific](https://www.magnific.com/).
+Hi, I'm Daniel Púa, also known as **devploit**. I'm a security researcher from Cádiz, based in San Francisco, California, and currently Head of Security at [Magnific](https://www.magnific.com/).
 
 My work focuses on vulnerability research, offensive security, product security, and turning unusual technical behavior into reproducible findings. This blog is where I publish the longer version: root causes, exploit primitives, proofs of concept, and the lessons that remain useful after a bug is fixed.
 
